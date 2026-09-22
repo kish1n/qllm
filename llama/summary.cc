@@ -39,6 +39,7 @@ void print_config(const ModelConfig &cfg) {
                      rs.rope_type, rs.factor, rs.low_freq_factor, rs.high_freq_factor,
                      rs.original_max_position_embeddings);
     }
+    std::println();
 }
 
 void print_safetensors(const SafeTensors &weights, const ModelConfig &cfg) {
@@ -83,6 +84,7 @@ void print_safetensors(const SafeTensors &weights, const ModelConfig &cfg) {
                      "file: {})",
                      weights.contains("lm_head.weight"));
     }
+    std::println();
 }
 
 } // namespace qllm

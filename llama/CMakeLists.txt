@@ -5,6 +5,7 @@ add_library(qllm_core STATIC
     json.cc
     safetensors.cc
     config.cc
+    embed.cc
     summary.cc
 )
 target_include_directories(qllm_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
